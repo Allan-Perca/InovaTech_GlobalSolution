@@ -23,8 +23,8 @@ o uso de pequenos drones equipados com garras para coletar lixo de áreas de dif
 	> expo start
 
 ### InovaTech Members:
-	> Allan Percario - RM99903
-	> Lucas dos Santos Lopes - RM550790
-	> Victor Taborda Rodrigues - RM97900
-	> Gustavo Marques Catelan - RM551823
-	> Murilo Machado - RM551823
+	> Allan Percario - RM99903 (2TDSPW)
+	> Lucas dos Santos Lopes - RM550790 (2TDSPJ)
+	> Victor Taborda Rodrigues - RM97900 (2TDSPJ)
+	> Gustavo Marques Catelan - RM551823 (2TDSPJ)
+	> Murilo Machado - RM551823 (2TDSPJ)

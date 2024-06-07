@@ -43,7 +43,7 @@ const HomeScreen = () => {
               </Text>
               <View style={styles.textContainer}>
                 <Text style={styles.text}>{'\n'}Descubra todas as possibilidades e contribua hoje para um amanhã melhor!</Text>
-                <TouchableOpacity style={styles.button} onPress={() => console.log('Contrate Agora clicked')}>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Dashboard')}>
                   <Text style={styles.buttonText}>Contrate Agora</Text>
                 </TouchableOpacity>
               </View>
