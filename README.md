@@ -14,7 +14,7 @@ o uso de pequenos drones equipados com garras para coletar lixo de áreas de dif
   	> NPM
 
 ### GitClone:
-	>	https://github.com/Allan-Perca/InovaTech_GlobalSolution.git
+	> https://github.com/Allan-Perca/InovaTech_GlobalSolution.git
 
 ### Install dependecies:
 	> npm install
