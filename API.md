@@ -64,51 +64,27 @@ Este documento descreve os endpoints utilizados para autenticação no projeto E
 ###   4. Atualização de Perfil
        Endpoint: https://identitytoolkit.googleapis.com/v1/accounts:update?key=[API_KEY]
        Método: PATCH
-       Descrição: Atualiza o perfil do usuário, como email ou senha.
+       Descrição: Atualiza o nome do usuario.
 
        > Exemplo de Requisição:
            {
-           "idToken": "ID_TOKEN",
-           "email": "novoEmail@example.com",
-           "password": "novaSenhaSuperSecreta",
-           "returnSecureToken": true
-           }
+            "idToken": "ID_TOKEN",
+            "displayName": "novoNome",
+            "returnSecureToken": true
+            }
        
        > Exemplo de Resposta:
            {
-           "idToken": "ID_TOKEN",
-           "email": "novoEmail@example.com",
-           "refreshToken": "REFRESH_TOKEN",
-           "expiresIn": "3600",
-           "localId": "LOCAL_ID"
-           }
+            "idToken": "ID_TOKEN",
+            "displayName": "novoNome",
+            "refreshToken": "REFRESH_TOKEN",
+            "expiresIn": "3600",
+            "localId": "LOCAL_ID"
+            }
 
-###   5. Verificação de Token
-       Endpoint: https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=[API_KEY]
-       Método: POST
-       Descrição: Verifica o token de ID do usuário para validar sua autenticidade.
 
-       > Exemplo de Requisição:
-           {
-           "idToken": "ID_TOKEN"
-           }
 
-       > Exemplo de Resposta:
-           {
-           "users": [{
-               "localId": "LOCAL_ID",
-               "email": "usuario@example.com",
-               "emailVerified": true,
-               "passwordHash": "HASH_DA_SENHA",
-               "passwordUpdatedAt": 1600000000000,
-               "validSince": "1600000000",
-               "lastLoginAt": "1600000000000",
-               "createdAt": "1600000000000",
-               "lastRefreshAt": "2020-01-01T00:00:00.000Z"
-               }]
-           }
-
-###   6. Exclusão de Usuário
+###   5. Exclusão de Usuário
         Endpoint: https://identitytoolkit.googleapis.com/v1/accounts:delete?key=[API_KEY]
         Método: DELETE
         Descrição: Exclui a conta de um usuário autenticado utilizando o token de ID.
